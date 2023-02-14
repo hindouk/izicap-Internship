@@ -80,9 +80,7 @@ Plain Text
          
    #### Clone source code from git
       
-    ```
     git clone https://github.com/hindouk/izicap-Internship
-    ```
          
    #### Build Docker image
       
@@ -100,9 +98,9 @@ Plain Text
          
    #### Test application
       
-   '''
+   ```batch
     curl localhost:9090/question
-    '''
+    ```
          
    I tested in Postman Tester : I ask it a question with type text and through REST API endpoint I receive the answer
          
