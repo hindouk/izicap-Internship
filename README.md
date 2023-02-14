@@ -38,7 +38,7 @@ Plain Text
    
    Swagger notation (also known as OpenAPI specification) is a standardized format for describing RESTful APIs, including the available endpoints, input/output data format, authentication methods, and other details. It uses YAML or JSON syntax to define the structure of the API, making it easier to generate client code, document the API, and test its functionality.
    
-   ...
+   '''
    
    <dependency>
             <groupId>io.springfox</groupId>
@@ -46,7 +46,7 @@ Plain Text
             <version>2.9.2</version>
         </dependency>
         
-    ...
+    '''
     
     ### Using docker container
     
