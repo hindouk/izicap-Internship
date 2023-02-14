@@ -2,6 +2,8 @@
 
 ## Idea of homework project 
 
+Plain Text
+
   As an AI language model, I can to communicate through a REST API endpoint. And I can expose an endpoint for me to receive requests and respond with text-based outputs.
  
  ### The planning of project:
@@ -22,11 +24,13 @@
     
      __ Note __ : I use **Postman** for testing the requests methods Post and Get and the my source code performance
      
-  ### Prerequisite:
+  ### Prerequisite :
+  
         + Docker
         + Git
         
-  ### Optional:
+  ### Optional :
+  
         + Java 17
         + Maven 3.x
         
@@ -49,7 +53,7 @@
       + Create a simple spring boot application.
       + Create a docker file under parent directory.
       + Paste the following code in the docker file.
-      ...
+      
         FROM openjdk:17-jdk
         FROM mysql:latest
         ENV MYSQL_DATABASE=chatgpt_db
