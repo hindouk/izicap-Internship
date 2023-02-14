@@ -42,7 +42,8 @@ Plain Text
    
    > I'am a bockquote
   
-  ```<dependency>
+  ```
+  <dependency>
   <groupId>io.springfox</groupId>
   <artifactId>springfox-swagger-ui</artifactId>
   <version>2.9.2</version>
