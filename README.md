@@ -42,12 +42,12 @@ Plain Text
    
    > I'am a bockquote
    '''
-   <dependency>
+        <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
-        
+    '''    
     
     
     ### Using docker container
@@ -70,40 +70,45 @@ Plain Text
       
      ### Steps to access of project:
          
-         #### Clone source code from git
-         ...
+      #### Clone source code from git
+      
+         '''
          git clone https://github.com/hindouk/izicap-Internship
-         ...
+         '''
          
-         #### Build Docker image
-         ...
+      #### Build Docker image
+      
+         '''
          docker build -t="izicap-Internship-0.0.1-SNAPSHOT-java"
-         ...
+         '''
          
          Maven build will be executes during creation of the docker image.
 
-         #### Run Docker Container
-         ...
-         docker run -p 9090:9090 -it --rm izicap-Internship-0.0.1-SNAPSHOT-java
-         ...
+      #### Run Docker Container
          
-         #### Test application
-         ...
+         '''
+         docker run -p 9090:9090 -it --rm izicap-Internship-0.0.1-SNAPSHOT-java
+         '''
+         
+      #### Test application
+      
+         '''
          curl localhost:9090/question
-         ...
+         '''
          
          I tested in Postman Tester : I ask it a question with type text and through REST API endpoint I receive the answer
          
-         ...
+         '''
          curl localhost:9090/export
-         ...
+         '''
          
           To download the csv file With name **questions**
-          
-          #### Stop Docker Container:
-          ...
+         
+      #### Stop Docker Container:
+      
+          '''
           docker stop `docker container ls | grep "izicap-Internship-0.0.1-SNAPSHOT-java:*" | awk '{ print $1 }'`
-          ...
+          '''
 
           
 
