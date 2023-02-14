@@ -28,13 +28,13 @@ Plain Text
      
   ### Prerequisite :
   
-        + Docker
-        + Git
+   + Docker
+   + Git
         
   ### Optional :
   
-        + Java 17
-        + Maven 3.x
+   + Java 17
+   + Maven 3.x
         
    ### The new notation: Swagger:
    
@@ -58,12 +58,19 @@ Plain Text
       
    '''
    FROM openjdk:17-jdk
+   
    FROM mysql:latest
+   
    ENV MYSQL_DATABASE=chatgpt_db
+   
    ENV MYSQL_ROOT_PASSWORD = ""
+   
    WORKDIR /my-application
+   
    COPY target/izicap-Internship-0.0.1-SNAPSHOT.jar /my-application/izicap-Internship-0.0.1-SNAPSHOT.jar
+   
    EXPOSE 9090
+   
    CMD service mysql start && java -jar izicap-Internship-0.0.1-SNAPSHOT.jar
    '''
       
@@ -72,43 +79,43 @@ Plain Text
          
    #### Clone source code from git
       
-         '''
-         git clone https://github.com/hindouk/izicap-Internship
-         '''
+    '''
+    git clone https://github.com/hindouk/izicap-Internship
+    '''
          
    #### Build Docker image
       
-         '''
-         docker build -t="izicap-Internship-0.0.1-SNAPSHOT-java"
-         '''
+    '''
+    docker build -t="izicap-Internship-0.0.1-SNAPSHOT-java"
+    '''
          
-         Maven build will be executes during creation of the docker image
+    Maven build will be executes during creation of the docker image
          
    #### Run Docker Container
          
-         '''
-         docker run -p 9090:9090 -it --rm izicap-Internship-0.0.1-SNAPSHOT-java
-         '''
+   '''
+    docker run -p 9090:9090 -it --rm izicap-Internship-0.0.1-SNAPSHOT-java
+    '''
          
    #### Test application
       
-         '''
-         curl localhost:9090/question
-         '''
+   '''
+    curl localhost:9090/question
+    '''
          
-         I tested in Postman Tester : I ask it a question with type text and through REST API endpoint I receive the answer
+   I tested in Postman Tester : I ask it a question with type text and through REST API endpoint I receive the answer
          
-         '''
-         curl localhost:9090/export
-         '''
+    '''
+    curl localhost:9090/export
+    '''
          
-          To download the csv file With name **questions**
+   To download the csv file With name **questions**
          
   #### Stop Docker Container:
       
-          '''
-          docker stop `docker container ls | grep "izicap-Internship-0.0.1-SNAPSHOT-java:*" | awk '{ print $1 }'`
-          '''
+ '''
+  docker stop `docker container ls | grep "izicap-Internship-0.0.1-SNAPSHOT-java:*" | awk '{ print $1 }'`
+  '''
 
           
 
