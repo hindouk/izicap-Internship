@@ -50,7 +50,7 @@ Plain Text
     '''    
     
     
-    ### Using docker container
+   ### Using docker container
     
       + Create a simple spring boot application.
       + Create a docker file under parent directory.
@@ -68,29 +68,29 @@ Plain Text
       '''
       
       
-     ### Steps to access of project:
+   ### Steps to access of project:
          
-      #### Clone source code from git
+   #### Clone source code from git
       
          '''
          git clone https://github.com/hindouk/izicap-Internship
          '''
          
-      #### Build Docker image
+   #### Build Docker image
       
          '''
          docker build -t="izicap-Internship-0.0.1-SNAPSHOT-java"
          '''
          
-         Maven build will be executes during creation of the docker image.
-
-      #### Run Docker Container
+         Maven build will be executes during creation of the docker image
+         
+   #### Run Docker Container
          
          '''
          docker run -p 9090:9090 -it --rm izicap-Internship-0.0.1-SNAPSHOT-java
          '''
          
-      #### Test application
+   #### Test application
       
          '''
          curl localhost:9090/question
@@ -104,7 +104,7 @@ Plain Text
          
           To download the csv file With name **questions**
          
-      #### Stop Docker Container:
+  #### Stop Docker Container:
       
           '''
           docker stop `docker container ls | grep "izicap-Internship-0.0.1-SNAPSHOT-java:*" | awk '{ print $1 }'`
