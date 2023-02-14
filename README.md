@@ -55,7 +55,8 @@ Plain Text
    + Create a simple spring boot application.
    + Create a docker file under parent directory.
    + Paste the following code in the docker file.
-      
+     
+   > I'am a bockquote  
    '''
    FROM openjdk:17-jdk
    
@@ -79,9 +80,9 @@ Plain Text
          
    #### Clone source code from git
       
-    '''
+    ```
     git clone https://github.com/hindouk/izicap-Internship
-    '''
+    ```
          
    #### Build Docker image
       
@@ -105,9 +106,9 @@ Plain Text
          
    I tested in Postman Tester : I ask it a question with type text and through REST API endpoint I receive the answer
          
-    '''
-    curl localhost:9090/export
-    '''
+   
+  `curl localhost:9090/export`
+   
          
    To download the csv file With name **questions**
          
