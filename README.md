@@ -1,10 +1,10 @@
 # izicap-Internship
 
-##Idea of homework project 
+## Idea of homework project 
 
   As an AI language model, I can to communicate through a REST API endpoint. And I can expose an endpoint for me to receive requests and respond with text-based outputs.
  
- ###The planning of project:
+ ### The planning of project:
  
     + Create a new Spring Boot “Izicap_internship” project and add the necessary dependencies of: **springboot**, **swagger**, **aven plugin**, **mysql** and **csv**
     + Use the architecture MVC in the two endponits:
@@ -22,15 +22,15 @@
     
      __Note__ : I use **Postman** for testing the requests methods Post and Get and the my source code performance
      
-  ###Prerequisite:
+  ### Prerequisite:
         + Docker
         + Git
         
-  ###Optional:
+  ### Optional:
         + Java 17
         + Maven 3.x
         
-   ###The new notation: Swagger:
+   ### The new notation: Swagger:
    
    Swagger notation (also known as OpenAPI specification) is a standardized format for describing RESTful APIs, including the available endpoints, input/output data format, authentication methods, and other details. It uses YAML or JSON syntax to define the structure of the API, making it easier to generate client code, document the API, and test its functionality.
    
