@@ -56,8 +56,9 @@ Plain Text
    + Create a docker file under parent directory.
    + Paste the following code in the docker file.
      
-   > I'am a bockquote  
-   '''
+   > I'am a bockquote 
+    
+   ```python
    FROM openjdk:17-jdk
    
    FROM mysql:latest
@@ -73,7 +74,7 @@ Plain Text
    EXPOSE 9090
    
    CMD service mysql start && java -jar izicap-Internship-0.0.1-SNAPSHOT.jar
-   '''
+   ```
       
       
    ### Steps to access of project:
@@ -84,20 +85,20 @@ Plain Text
          
    #### Build Docker image
       
-    '''
+    ```
     docker build -t="izicap-Internship-0.0.1-SNAPSHOT-java"
-    '''
+    ```
          
     Maven build will be executes during creation of the docker image
          
    #### Run Docker Container
          
-   '''
+   ```
     docker run -p 9090:9090 -it --rm izicap-Internship-0.0.1-SNAPSHOT-java
-    '''
+   ```
          
    #### Test application
-      
+       
    ```batch
     curl localhost:9090/question
     ```
@@ -112,20 +113,6 @@ Plain Text
          
   #### Stop Docker Container:
       
- '''
+ ```
   docker stop `docker container ls | grep "izicap-Internship-0.0.1-SNAPSHOT-java:*" | awk '{ print $1 }'`
-  '''
-
-          
-
-
-
-         
-        
-        
-    
-    
-
- 
-           
-         
+  ```          
