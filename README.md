@@ -41,31 +41,31 @@ Plain Text
    Swagger notation (also known as OpenAPI specification) is a standardized format for describing RESTful APIs, including the available endpoints, input/output data format, authentication methods, and other details. It uses YAML or JSON syntax to define the structure of the API, making it easier to generate client code, document the API, and test its functionality.
    
    > I'am a bockquote
-   '''
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.9.2</version>
-        </dependency>
-    '''    
+  '''
+  <dependency>
+  <groupId>io.springfox</groupId>
+  <artifactId>springfox-swagger-ui</artifactId>
+  <version>2.9.2</version>
+  </dependency>
+  '''    
     
     
    ### Using docker container
     
-      + Create a simple spring boot application.
-      + Create a docker file under parent directory.
-      + Paste the following code in the docker file.
+   + Create a simple spring boot application.
+   + Create a docker file under parent directory.
+   + Paste the following code in the docker file.
       
-      '''
-        FROM openjdk:17-jdk
-        FROM mysql:latest
-        ENV MYSQL_DATABASE=chatgpt_db
-        ENV MYSQL_ROOT_PASSWORD = ""
-        WORKDIR /my-application
-        COPY target/izicap-Internship-0.0.1-SNAPSHOT.jar /my-application/izicap-Internship-0.0.1-SNAPSHOT.jar
-        EXPOSE 9090
-        CMD service mysql start && java -jar izicap-Internship-0.0.1-SNAPSHOT.jar
-      '''
+   '''
+   FROM openjdk:17-jdk
+   FROM mysql:latest
+   ENV MYSQL_DATABASE=chatgpt_db
+   ENV MYSQL_ROOT_PASSWORD = ""
+   WORKDIR /my-application
+   COPY target/izicap-Internship-0.0.1-SNAPSHOT.jar /my-application/izicap-Internship-0.0.1-SNAPSHOT.jar
+   EXPOSE 9090
+   CMD service mysql start && java -jar izicap-Internship-0.0.1-SNAPSHOT.jar
+   '''
       
       
    ### Steps to access of project:
