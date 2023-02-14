@@ -99,20 +99,20 @@ Plain Text
          
    #### Test application
        
-   ```batch
-    curl localhost:9090/question
-    ```
+   ```
+   curl localhost:9090/question
+   ```
          
-   I tested in Postman Tester : I ask it a question with type text and through REST API endpoint I receive the answer
+  I tested in Postman Tester : I ask it a question with type text and through REST API endpoint I receive the answer
          
-   
-  `curl localhost:9090/export`
-   
+  ``` 
+  curl localhost:9090/export`
+  ```
          
-   To download the csv file With name **questions**
+  To download the csv file With name **questions**
          
-  #### Stop Docker Container:
+ #### Stop Docker Container:
       
- ```
+  ```
   docker stop `docker container ls | grep "izicap-Internship-0.0.1-SNAPSHOT-java:*" | awk '{ print $1 }'`
   ```          
